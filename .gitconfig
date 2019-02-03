@@ -1,0 +1,8 @@
+[user]
+	email = zhangzhengyuan0604@gmail.com
+	name = zhangzhengyuan
+[core]
+	autocrlf = false
+	editor = vim
+[credential]
+	helper = store
