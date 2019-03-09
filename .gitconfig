@@ -6,3 +6,7 @@
 	editor = vim
 [credential]
 	helper = store
+[log]
+	decorate = auto
+[color]
+	ui = true
