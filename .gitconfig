@@ -7,6 +7,8 @@
 [credential]
 	helper = store
 [log]
-	decorate = auto
+	decorate = true
 [color]
 	ui = true
+[push]
+	default = simple
