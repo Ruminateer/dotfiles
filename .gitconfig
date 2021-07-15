@@ -4,11 +4,34 @@
 [core]
 	autocrlf = false
 	editor = vim
+	excludesFile = ~/.gitignore_global
 [credential]
 	helper = store
 [log]
-	decorate = true
+	decorate = auto
 [color]
 	ui = true
 [push]
 	default = simple
+[alias]
+	s = status
+	d = diff
+	l = log --oneline --graph -20
+	a = add
+	b = branch
+	c = commit --signoff
+	f = fetch --prune
+
+	co = checkout
+	sw = switch
+	sh = show
+	rs = reset
+	rt = restore
+	rb = rebase
+	mg = merge
+	ps = push
+	pl = pull
+	cl = clean -fd
+
+	uc = reset --soft HEAD^
+	rv = diff --staged
