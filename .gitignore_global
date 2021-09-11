@@ -1,2 +1,10 @@
 .vscode
 *.exe
+*.pyc
+*.log
+
+# latex files
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
