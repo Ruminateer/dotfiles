@@ -9,6 +9,3 @@ filetype indent on
 
 set smartcase
 set hlsearch
-
-set foldenable
-set foldmethod=indent
