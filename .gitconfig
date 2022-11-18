@@ -8,10 +8,6 @@
 	pager = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
 [credential]
 	helper = store
-[log]
-	decorate = auto
-[color]
-	ui = auto
 [color "diff"]
 	context = normal dim
 [color "diff-highlight"]
@@ -19,8 +15,8 @@
 	oldHighlight = red
 	newNormal = green dim
 	newHighlight = green
-[push]
-	default = simple
+[init]
+	defaultBranch = master
 [alias]
 	a = add
 	b = branch
