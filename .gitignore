@@ -1,7 +1,8 @@
-*
+/*
 !.bash_aliases
 !.gitconfig
 !.vimrc
 !README.md
 !default.gitignore
 !.gitignore
+!/.config
