@@ -4,7 +4,6 @@
 [core]
 	autocrlf = false
 	editor = vim
-	excludesFile = ~/default.gitignore
 	pager = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
 [credential]
 	helper = store
