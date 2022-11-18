@@ -1,11 +1,5 @@
 set number
-set cursorline
-syntax enable
+set relativenumber
+set mouse=a
 
-set tabstop=4
-set softtabstop=4
-set autoindent
-filetype indent on
-
-set smartcase
-set hlsearch
+filetype plugin indent on
