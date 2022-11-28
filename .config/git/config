@@ -22,7 +22,7 @@
 	c = commit
 	d = diff
 	f = fetch --prune
-	l = log --oneline --graph -20
+	l = log --graph --date=human --pretty=format:'%C(auto)%h %Cblue%ad %Cgreen%aN %C(auto)%s%d'
 	s = status
 
 	co = checkout
