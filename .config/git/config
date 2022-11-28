@@ -37,7 +37,6 @@
 	sh = show
 	sw = switch
 
-	cl = clean -fd
-	cla = cl -x
+	cl = clean -i
 	rv = diff --staged
 	uc = reset --soft HEAD^
