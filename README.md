@@ -1,4 +1,4 @@
 # dotfiles
 
-These are my personal dotfiles.
-They are for backup purposes and may not be very portable.
+My personal dotfiles.
+All configs are for personal use only and may not be very portable.
