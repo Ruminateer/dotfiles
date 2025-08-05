@@ -27,6 +27,8 @@
 	l = log --graph --date=human --pretty=format:'%C(auto)%h %Cblue%ad %Cgreen%aN %C(auto)%s%d'
 	s = status
 
+	ci = commit
+	st = status
 	co = checkout
 	mg = merge
 	pl = pull
