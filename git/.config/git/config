@@ -22,7 +22,7 @@
 	c = commit
 	d = diff --color-moved
 	f = fetch
-	l = log --graph --date=human --pretty=format:'%C(auto)%h %Cblue%ad %Cgreen%aN %C(auto)%s%d'
+	l = log --graph --pretty='%C(auto)%h %Cblue%as %Cgreen%aN %C(auto)%s%d'
 	s = status
 
 	ci = commit
