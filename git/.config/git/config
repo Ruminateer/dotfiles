@@ -5,8 +5,6 @@
 	autocrlf = false
 	editor = vim
 	pager = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
-[credential]
-	helper = store
 [color "diff"]
 	context = normal dim
 [color "diff-highlight"]
@@ -22,7 +20,7 @@
 	a = add
 	b = branch
 	c = commit
-	d = diff
+	d = diff --color-moved
 	f = fetch
 	l = log --graph --date=human --pretty=format:'%C(auto)%h %Cblue%ad %Cgreen%aN %C(auto)%s%d'
 	s = status
@@ -42,8 +40,3 @@
 	cl = clean -i
 	ds = diff --staged
 	uc = reset --soft HEAD^
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
