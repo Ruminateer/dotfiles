@@ -1,4 +1,6 @@
-.vscode
+*.swp
+
+# binary files
 *.exe
 *.pyc
 
