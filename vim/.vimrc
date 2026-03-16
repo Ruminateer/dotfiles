@@ -1,3 +1,5 @@
+vim9script
+
 source $VIMRUNTIME/defaults.vim
 
 set number
