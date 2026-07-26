@@ -4,4 +4,14 @@ source $VIMRUNTIME/defaults.vim
 
 set number
 set relativenumber
+
 set mouse=a
+
+set autoindent
+set smarttab
+set expandtab
+
+set list
+set listchars=tab:>-,trail:-
+
+set autoread
