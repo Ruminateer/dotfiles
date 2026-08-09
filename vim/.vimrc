@@ -15,3 +15,12 @@ set list
 set listchars=tab:>-,trail:-
 
 set autoread
+
+set updatetime=100
+
+call plug#begin()
+
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+call plug#end()
