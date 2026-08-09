@@ -28,9 +28,18 @@ highlight GitGutterAdd guifg=Green guibg=DarkGreen
 highlight GitGutterChange guifg=Cyan guibg=DarkCyan
 highlight GitGutterDelete guifg=Red
 
-call plug#begin()
+# Vim Plugs
+
+const plugPath = expand('~/.vim/autoload/plug.vim')
+const plugUrl = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+if !filereadable(plugPath)
+  silent execute $'!curl -fLo {shellescape(plugPath)} --create-dirs {shellescape(plugUrl)}'
+endif
+
+plug#begin()
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
-call plug#end()
+plug#end()
