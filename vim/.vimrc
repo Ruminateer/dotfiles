@@ -41,5 +41,19 @@ plug#begin()
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'yegappan/lsp'
 
 plug#end()
+
+# LSPs
+
+final lspServers = [
+  {
+    name: 'hls',
+    filetype: ['haskell', 'lhaskell'],
+    path: 'haskell-language-server-wrapper',
+    args: ['--lsp'],
+  }
+]
+
+autocmd User LspSetup g:LspAddServer(lspServers)
