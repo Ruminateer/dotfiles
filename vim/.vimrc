@@ -18,6 +18,8 @@ set autoread
 
 set updatetime=100
 
+set laststatus=2
+
 # colors
 
 set termguicolors
