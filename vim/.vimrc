@@ -20,6 +20,8 @@ set updatetime=100
 
 set laststatus=2
 
+g:mapleader = ','
+
 # colors
 
 set termguicolors
@@ -59,3 +61,37 @@ final lspServers = [
 ]
 
 autocmd User LspSetup g:LspAddServer(lspServers)
+
+autocmd User LspAttached {
+  nnoremap <buffer> <silent> gd <cmd>LspGotoDefinition<cr>
+  nnoremap <buffer> <silent> gD <cmd>LspGotoDeclaration<cr>
+  nnoremap <buffer> <silent> gI <cmd>LspGotoImpl<cr>
+  nnoremap <buffer> <silent> gy <cmd>LspGotoTypeDef<cr>
+  nnoremap <buffer> <silent> gr <cmd>LspShowReferences<cr>
+
+  nnoremap <buffer> <silent> K  <cmd>LspHover<cr>
+
+  nnoremap <buffer> <silent> [d <cmd>LspDiag prev<cr>
+  nnoremap <buffer> <silent> ]d <cmd>LspDiag next<cr>
+
+  nnoremap <buffer> <silent> <leader>rn <cmd>LspRename<cr>
+  nnoremap <buffer> <silent> <leader>f <cmd>LspFormat<cr>
+  nnoremap <buffer> <silent> <leader>ca <cmd>LspCodeAction<cr>
+}
+
+autocmd User LspDetached {
+  silent! nunmap <buffer> gd
+  silent! nunmap <buffer> gD
+  silent! nunmap <buffer> gI
+  silent! nunmap <buffer> gy
+  silent! nunmap <buffer> gr
+
+  silent! nunmap <buffer> K
+
+  silent! nunmap <buffer> [d
+  silent! nunmap <buffer> ]d
+
+  silent! nunmap <buffer> <leader>rn
+  silent! nunmap <buffer> <leader>f
+  silent! nunmap <buffer> <leader>ca
+}
