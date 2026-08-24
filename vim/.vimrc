@@ -57,10 +57,26 @@ final lspServers = [
     filetype: ['haskell', 'lhaskell'],
     path: 'haskell-language-server-wrapper',
     args: ['--lsp'],
+    workspaceConfig: {
+      haskell: {
+        plugin: {
+          semanticTokens: {
+            globalOn: true,
+          },
+        },
+      },
+    },
   }
 ]
 
-autocmd User LspSetup g:LspAddServer(lspServers)
+const lspOpts = {
+  semanticHighlight: true,
+}
+
+autocmd User LspSetup {
+  g:LspAddServer(lspServers)
+  g:LspOptionsSet(lspOpts)
+}
 
 autocmd User LspAttached {
   nnoremap <buffer> <silent> gd <cmd>LspGotoDefinition<cr>
