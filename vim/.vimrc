@@ -28,9 +28,9 @@ set termguicolors
 
 highlight! link SignColumn LineNr
 
-highlight GitGutterAdd guifg=Green guibg=DarkGreen
-highlight GitGutterChange guifg=Cyan guibg=DarkCyan
-highlight GitGutterDelete guifg=Red
+highlight GitGutterAdd ctermfg=Green ctermbg=DarkGreen guifg=Green guibg=DarkGreen
+highlight GitGutterChange ctermfg=Cyan ctermbg=DarkCyan guifg=Cyan guibg=DarkCyan
+highlight GitGutterDelete ctermfg=Red guifg=Red
 
 # Vim Plugs
 
