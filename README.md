@@ -10,7 +10,7 @@ Clone the repository and link every module:
 ```sh
 git clone https://github.com/Ruminateer/dotfiles.git
 cd dotfiles
-stow -t "$HOME" fish git make vim
+stow -t "$HOME" fish git make tmux vim
 ```
 
 Preview changes with `stow -n -v -t "$HOME" <module>`.
