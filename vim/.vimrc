@@ -76,11 +76,12 @@ final lspServers = [
 
 const lspOpts = {
   semanticHighlight: true,
+  ignoreMissingServer: true,
 }
 
 autocmd User LspSetup {
-  g:LspAddServer(lspServers)
   g:LspOptionsSet(lspOpts)
+  g:LspAddServer(lspServers)
 }
 
 autocmd User LspAttached {
