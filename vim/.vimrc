@@ -52,6 +52,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'yegappan/lsp'
 
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+
 plug#end()
 
 # LSPs
