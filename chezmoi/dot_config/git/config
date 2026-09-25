@@ -4,7 +4,6 @@
 [core]
 	autocrlf = false
 	editor = vim
-	pager = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
 [color "diff"]
 	context = normal dim
 [color "diff-highlight"]
@@ -40,3 +39,5 @@
 	cl = clean -i
 	ds = diff --staged
 	uc = reset --soft HEAD^
+[include]
+	path = config.local

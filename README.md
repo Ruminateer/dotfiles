@@ -48,6 +48,7 @@ packages. Each shared file is a relative symlink to its chezmoi source:
 ```text
 chezmoi/
   dot_config/git/config              # real shared config
+  dot_config/git/config.local.tmpl   # chezmoi-only template
 stow/
   git/.config/git/config             # -> ../../../../chezmoi/dot_config/git/config
 ```

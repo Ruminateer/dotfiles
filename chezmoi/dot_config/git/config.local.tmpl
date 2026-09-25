@@ -1,0 +1,10 @@
+# Machine-specific settings managed by chezmoi.
+{{ if eq .chezmoi.os "linux" -}}
+{{ if eq .chezmoi.osRelease.id "arch" -}}
+[core]
+	pager = perl /usr/share/git/diff-highlight/diff-highlight | less
+{{ else if eq .chezmoi.osRelease.id "debian" "ubuntu" -}}
+[core]
+	pager = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
+{{ end -}}
+{{ end -}}
