@@ -11,7 +11,7 @@ Clone the repository and link every module:
 git clone https://github.com/Ruminateer/dotfiles.git
 cd dotfiles
 mkdir -p "$HOME/.config"
-stow -t "$HOME" fish git make tmux vim
+stow -t "$HOME" git make tmux vim
 ```
 
 Preview changes with `stow -n -v -t "$HOME" <module>`.
