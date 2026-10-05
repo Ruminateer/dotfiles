@@ -20,7 +20,7 @@ set updatetime=100
 
 set laststatus=2
 
-g:mapleader = ','
+g:mapleader = ' '
 
 if executable('rg')
   set grepprg=rg\ --vimgrep\ --smart-case
