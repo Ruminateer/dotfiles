@@ -50,6 +50,7 @@ plug#begin()
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sleuth'
 Plug 'yegappan/lsp'
 
 Plug 'junegunn/fzf'
