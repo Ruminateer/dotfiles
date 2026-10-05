@@ -4,6 +4,8 @@
 [core]
 	autocrlf = false
 	editor = vim
+[diff]
+	colorMoved = default
 [color "diff"]
 	context = normal dim
 [color "diff-highlight"]
@@ -19,7 +21,7 @@
 	a = add
 	b = branch
 	c = commit
-	d = diff --color-moved
+	d = diff
 	f = fetch
 	l = log --graph --pretty='%C(auto)%h %Cblue%as %Cgreen%aN %C(auto)%s%d'
 	s = status
