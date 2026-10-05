@@ -58,6 +58,9 @@ Plug 'junegunn/fzf.vim'
 
 plug#end()
 
+nnoremap <leader>ff <cmd>Files<cr>
+nnoremap <leader>fg <cmd>GFiles<cr>
+
 # LSPs
 
 final lspServers = [
@@ -100,8 +103,8 @@ autocmd User LspAttached {
   nnoremap <buffer> <silent> [d <cmd>LspDiag prev<cr>
   nnoremap <buffer> <silent> ]d <cmd>LspDiag next<cr>
 
-  nnoremap <buffer> <silent> <leader>rn <cmd>LspRename<cr>
-  nnoremap <buffer> <silent> <leader>f <cmd>LspFormat<cr>
+  nnoremap <buffer> <silent> <leader>cr <cmd>LspRename<cr>
+  nnoremap <buffer> <silent> <leader>cf <cmd>LspFormat<cr>
   nnoremap <buffer> <silent> <leader>ca <cmd>LspCodeAction<cr>
 }
 
@@ -117,7 +120,7 @@ autocmd User LspDetached {
   silent! nunmap <buffer> [d
   silent! nunmap <buffer> ]d
 
-  silent! nunmap <buffer> <leader>rn
-  silent! nunmap <buffer> <leader>f
+  silent! nunmap <buffer> <leader>cr
+  silent! nunmap <buffer> <leader>cf
   silent! nunmap <buffer> <leader>ca
 }
