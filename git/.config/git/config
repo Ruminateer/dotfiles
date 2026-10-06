@@ -4,6 +4,8 @@
 [core]
 	autocrlf = false
 	editor = vim
+[rebase]
+	autoSquash = true
 [diff]
 	colorMoved = default
 [color "diff"]
